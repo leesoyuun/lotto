@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,ConstellationActivity::class.java)
             startActivity(intent)
         }
+        findViewById<View>(R.id.namecardview).setOnClickListener {
+            val intent = Intent(this,NameActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
