@@ -15,8 +15,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         findViewById<View>(R.id.namecardview).setOnClickListener {
-            val intent = Intent(this,NameActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this,NameActivity::class.java))
         }
 
 
