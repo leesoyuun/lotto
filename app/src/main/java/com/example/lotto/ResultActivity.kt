@@ -12,9 +12,10 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-        val result = intent.getIntegerArrayListExtra("result") //?: return
+        val result = intent.getIntegerArrayListExtra("result")
         val constellation = intent.getStringExtra("constellation")
         val date = intent.getStringExtra("date")
+
         result?.let {
             updateLottoBallImages(result.sortedBy { it })
         }

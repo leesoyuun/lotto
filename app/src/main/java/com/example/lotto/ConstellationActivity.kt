@@ -38,7 +38,7 @@ class ConstellationActivity : AppCompatActivity() {
                     override fun onSelectedDayChange(view: CalendarView, year: Int, month: Int, dayOfMonth: Int)
                     {}
                     override fun onDateChanged(view: DatePicker?, year: Int, monthOfYear: Int, dayOfMonth: Int) {
-                        txtConstell.text = makeConstellationString(datePicker.month,datePicker.dayOfMonth)
+                        txtConstell.text = makeConstellationString(datePicker.month+1,datePicker.dayOfMonth)
                     }
 
                 }
